@@ -1,0 +1,105 @@
+body {
+  color: white;
+  background-color: #999999;
+}
+
+/** Header **/
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar {
+  padding-bottom: 25px;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Marcellus', serif;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-header button.navbar-toggle {
+  float: right;
+  margin: 25px;
+}
+
+/* Dropdown pre-sets */
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Marcellus', serif;
+  font-size: 1.8em;
+  padding: 1em 1em 0 1em;
+  cursor: pointer;
+}
+
+.tab-label::after {
+  text-align: center;
+  transition: all .35s;
+}
+
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  border-bottom: 1px solid white;
+  color: white;
+  transition: all .35s;
+}
+
+/* :checked */
+input:checked ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+}
+
+/** Body **/
+h1.text-center {
+  padding: 20px;
+}
+
+.body-container {
+  background-color: #999999;  /* grey */
+}
+
+/** Responsive design **/
+@media (max-width: 767px) {
+  #body-labels {
+    visibility: hidden;
+    display: none;
+  }
+  body {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 768px) {
+  #header-labels {
+    visibility: hidden;
+    display: none;
+  }
+}
